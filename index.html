@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOSMOS ULLEUNGDO | 코스모스 울릉도</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
+    <script src="js/fullpage.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- popup -->
+    <div class="popup1">
+        <div class="pop-top">
+            <img src="img/pop1.jpg" alt="popup1">
+            <button type="button" class="rsv"
+                onclick="window.open('https://be4.wingsbooking.com/KOSMOS1111?lang_type=KO')">예약하기</button>
+        </div>
+        <div class="pop-btm">
+            <label for="ptoday" onclick="closePopup('.popup1')">
+                <input type="checkbox" class="todayclose" id="ptoday">
+                오늘 하루 보지 않기
+            </label>
+            <button type="button" class="cls" onclick="closePopup('.popup1')">닫기</button>
+        </div>
+    </div>
+
+    <div class="popup2">
+        <div class="pop-top">
+            <img src="img/pop2.jpg" alt="popup2">
+            <button type="button" class="alrm">오픈 알림 받기</button>
+        </div>
+        <div class="pop-btm">
+            <label for="ptoday2" onclick="closePopup('.popup2')">
+                <input type="checkbox" class="todayclose" id="ptoday2">
+                오늘 하루 보지 않기
+            </label>
+            <button type="button" class="cls" onclick="closePopup('.popup2')">닫기</button>
+        </div>
+    </div>
+
+    <div class="popup3">
+        <div class="question">
+            <div class="tit">
+                VILLA KOSMOS에 대한 궁금한 점은<br>
+                유선 또는 메일로 문의주시면 빠르게<br>
+                답변드리겠습니다
+            </div>
+            <div class="txt">
+                <b>문의전화</b> 054-791-7788<br>
+                <b>이메일</b> welcome@thekosmos.co.kr
+            </div>
+            <button type="button">닫기</button>
+        </div>
+    </div>
+    <!-- main -->
+    <div class="main_wrap">
+        <a href="index2.html" rel="noopener noreferrer" target="_blank" class="home_btn aos-init aos-animate"
+            data-aos="fade-left">
+            <div class="inner">
+                <img src="img/logo_cymbol.svg" alt="로고심볼">
+                <p>HOME</p>
+            </div>
+        </a>
+        <main id="fullpage">
+            <section id="section1" class="section">
+                <video src="img/main_video.mp4" data-autoplay loop muted></video>
+                <img src="img/main-logo.svg" alt="메인로고" class="top-logo">
+                <p class="tit">Where you meet fortune and prosperity</p>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="noti_box">
+                                    <a href="#" rel="noopener noreferrer" class="link_btn" id="ques">
+                                        <i>
+                                            <b>문의하기</b>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="txt_box">
+                                    <div class="img_box"><img src="img/illu_kosmos.png" alt="illu_kosmos"></div>
+                                    <div class="name_box"><img src="img/txt_kosmos.svg" alt="Kosmos"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="noti_box">
+                                    <a href="https://be4.wingsbooking.com/KOSMOS1111?lang_type=KO"
+                                        rel="noopener noreferrer" target="_blank" class="link_btn">
+                                        <i>
+                                            <b>예약하기</b>
+                                            <!-- <b>예약하기</b> -->
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="txt_box">
+                                    <div id="reserve" class="img_box"><img src="img/illu_terre.png" alt="illu_terre">
+                                    </div>
+                                    <div class="name_box"><img src="img/txt_terre.svg" alt="terre"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="noti_box">
+                                    <p>COMING SOON</p>
+                                    <span class="d_day_days" id="d_days"></span>
+                                    <a href="#page5" rel="noopener noreferrer" class="link_btn" id="link_btn"
+                                        style="background-color: #386ef0;">
+                                        <i>
+                                            <b style="color: #fff;">오픈 알림 받기</b>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="txt_box">
+                                    <div id="openalrm" class="img_box"><img src="img/illu_sommet.png" alt="illu_sommet">
+                                    </div>
+                                    <div class="name_box"><img src="img/txt_sommet.svg" alt="sommet"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <span class="scr_down">Scroll</span>
+            </section>
+            <section id="section2" class="section">
+                <ul class="division_wrap">
+                    <li>
+                        <img src="img/bg_kosmos.webp" alt="kosmos" class="bg">
+                        <ul class="icon_box">
+                            <li class="on"><img src="img/ico_kosmos.svg" alt="kosmos_icon"></li>
+                            <li class="on" style="opacity: 0.4;"><img src="img/ico_terre.svg" alt="terre_icon"></li>
+                            <li class="on" style="opacity: 0.4;"><img src="img/ico_sommet.svg" alt="sommet_icon"></li>
+                        </ul>
+                        <div class="noti_box">
+                            <a href="#" rel="noopener noreferrer" class="link_btn" id="ques">
+                                <i>
+                                    <b>문의하기</b>
+                                </i>
+                            </a>
+                        </div>
+                        <div class="tit_box">
+                            <img src="img/txt_kosmos.svg" alt="kosmos">
+                            <p>EXCLUSIVE PRIVATE<br> VILLA</p>
+                        </div>
+                        <div class="txt_box">
+                            <span>
+                                음과 양의 조화가 가장 완벽하게 이루어지는
+                                <br>
+                                대우주의 기운을 담은 공간
+                            </span>
+                            <p>
+                                A space that captures the energy of the kosmos,
+                                <br>
+                                where the harmony of yin and yang are perfectly balanced.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/bg_terre.webp" alt="terre" class="bg">
+                        <ul class="icon_box">
+                            <li class="on" style="opacity: 0.4;"><img src="img/ico_kosmos.svg" alt="kosmos_icon"></li>
+                            <li class="on"><img src="img/ico_terre.svg" alt="terre_icon"></li>
+                            <li class="on" style="opacity: 0.4;"><img src="img/ico_sommet.svg" alt="sommet_icon"></li>
+                        </ul>
+                        <div class="noti_box">
+                            <a href="https://be4.wingsbooking.com/KOSMOS1111?lang_type=KO" rel="noopener noreferrer"
+                                target="_blank" class="link_btn">
+                                <i>
+                                    <b>예약하기</b>
+                                    <!-- <b>예약하기</b> -->
+                                </i>
+                            </a>
+                        </div>
+                        <div class="tit_box">
+                            <img src="img/txt_terre.svg" alt="terre">
+                            <p>8 ROOMS</p>
+                        </div>
+                        <div class="txt_box">
+                            <span>
+                                울릉도의 대자연이 탄생한 대지의 기운과 생명력의
+                                <br>
+                                풍요로움을 전달하는 공간
+                            </span>
+                            <p>
+                                A space that conveys the rich vitality and energy of the land
+                                <br>
+                                where Ulleung Island’s nature was born.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/bg_sommet.webp" alt="sommet" class="bg">
+                        <ul class="icon_box">
+                            <li class="on" style="opacity: 0.4;"><img src="img/ico_kosmos.svg" alt="kosmos_icon"></li>
+                            <li class="on" style="opacity: 0.4;"><img src="img/ico_terre.svg" alt="terre_icon"></li>
+                            <li class="on"><img src="img/ico_sommet.svg" alt="sommet_icon"></li>
+                        </ul>
+                        <div class="noti_box">
+                            <a href="#page5" rel="noopener noreferrer" class="link_btn" id="link_btn"
+                                style="background-color: #386ef0;">
+                                <i>
+                                    <b style="color:#fff;">오픈 알림 받기</b>
+                                </i>
+                            </a>
+                        </div>
+                        <div class="tit_box">
+                            <img src="img/txt_sommet.svg" alt="sommet">
+                            <p>pool villa<br> [10 suites]</p>
+                        </div>
+                        <div class="txt_box">
+                            <span>
+                                영화롭게 솟아오르는 울릉도 산봉우리 비경의
+                                <br>
+                                좋은 기운을 받아 채우는 공간
+                            </span>
+                            <p>
+                                A space that captures the good energy of the
+                                <br>
+                                Ulleung Island mountain peaks that are rising gloriously.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section id="section3" class="section">
+                <video src="img/main_video.mp4" autoplay loop muted></video>
+                <div class="vid_btn" style="cursor: pointer;">
+                    <img src="img/vid_btn.svg" alt="">
+                </div>
+            </section>
+            <section id="section4" class="section">
+                <div class="title">
+                    <img src="img/txt_sommet.svg" alt="sommet">
+                </div>
+                <ul class="division_wrap">
+                    <li>
+                        <img src="img/bg_hsys.webp" alt="hsys" class="bg">
+                        <div class="logo">
+                            <img src="img/logo_hsys.svg" alt="hsys logo" style="height: 60px; margin-top: -1vh;">
+                            <span style="margin-top: -2vh;">room</span>
+                        </div>
+                        <p>
+                            전 객실에 구비된 야외 테라스와 자쿠지에서
+                            <br>
+                            울릉도의 자연과 음양오행의 기운을
+                            <br>
+                            온전히 느낄 수 있는 휴식처
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/bg_laull.webp" alt="laull" class="bg">
+                        <div class="logo">
+                            <img src="img/logo_laull.svg" alt="hsys logo">
+                            <span>restaurant</span>
+                        </div>
+                        <p>
+                            울릉도 땅의 기운을 담은 신선한 재료와
+                            <br>
+                            음양오행의 조화를 이룬 음식으로
+                            <br>
+                            지친 몸을 보양하는 코스모스의 부엌
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/bg_leflot.webp" alt="leflot" class="bg">
+                        <div class="logo">
+                            <img src="img/logo_leflot.svg" alt="leflot logo">
+                            <span>stone therapy</span>
+                        </div>
+                        <p>
+                            오행의 기운이 깃든 스톤으로
+                            <br>
+                            자연의 에너지를 흡수하고 마음을 정화하는
+                            <br>
+                            깊은 이완과 치유를 경험하는 명상의 공간
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/bg_bar.webp" alt="sommet" class="bg">
+                        <div class="logo">
+                            <img src="img/logo_bar.svg" alt="sommet logo">
+                            <span>infinity pool</span>
+                        </div>
+                        <p>
+                            울릉도의 산과 바다의 에너지를 담은 바&라운지,
+                            <br>
+                            하늘과 바다로 이어지는 조화로운 음양오행의
+                            <br>
+                            기운을 받을 수 있는 인피니티 풀
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section id="section5" class="section">
+                <div class="main_reserve_wrap">
+                    <div class="sommet_tit">
+                        <img src="img/txt_sommet.svg" alt="sommet sommet_tit">
+                    </div>
+                    <div class="grand_open_time">
+                        <p class="tit">THE GRAND OPENING</p>
+                        <div class="timer">
+                            <div class="time">
+                                <div id="days">0</div>
+                                <div class="text">day</div>
+                            </div>
+                            :
+                            <div class="time">
+                                <div id="hours">0</div>
+                                <div class="text">hour</div>
+                            </div>
+                            :
+                            <div class="time">
+                                <div id="minutes">0</div>
+                                <div class="text">min</div>
+                            </div>
+                            :
+                            <div class="time">
+                                <div id="seconds">0</div>
+                                <div class="text">sec</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="write_box">
+                        <form>
+                            <div class="privacy_box">
+                                <label class="agree_chk agree_chk_all">
+                                    <input type="checkbox" name="pv_agree_all" required>
+                                    <i></i>
+                                    <p class="pv_subject">개인 정보 수집 · 이용에 모두 동의합니다.</p>
+                                </label>
+                                <div class="privacy_list">
+                                    <ul>
+                                        <li>
+                                            <label class="agree_chk">
+                                                <input type="checkbox" name="privateYn" required>
+                                                <i></i>
+                                                <p class="pv_subject">개인정보 수집·이용 동의
+                                                    <span class="req">(필수)</span>
+                                                </p>
+                                            </label>
+                                            <div data-btn="privacy1" class="info_btn">보기</div>
+                                        </li>
+                                        <li>
+                                            <label class="agree_chk">
+                                                <input type="checkbox" name="marketingYn" required>
+                                                <i></i>
+                                                <p class="pv_subject">마케팅 목적 개인정보 수집·이용 동의
+                                                    <span style="color: rgba(255, 255, 255, 0.4);">(선택)</span>
+                                                </p>
+                                            </label>
+                                            <div data-btn="privacy2" class="info_btn">보기</div>
+                                        </li>
+                                        <li>
+                                            <label class="agree_chk">
+                                                <input type="checkbox" name="adsYn" required>
+                                                <i></i>
+                                                <p class="pv_subject">광고성 정보 수신 동의
+                                                    <span style="color: rgba(255, 255, 255, 0.4);">(선택)</span>
+                                                </p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="write_list">
+                                <li>
+                                    <label for="name" class="write_input">
+                                        <input type="text" name="name" maxlength="50" required>
+                                        <span class="label_box">Name</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="e-mail" class="write_input">
+                                        <input type="text" name="email" maxlength="100" required>
+                                        <span class="label_box">E-mail</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="number" class="write_input">
+                                        <input type="text" name="number" required>
+                                        <span class="label_box">Mobile</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <input type="button" class="reserve_submit_btn link_btn" value="오픈 알림 받기" data-entry="false"
+                                disabled>
+                            </input>
+                        </form>
+                    </div>
+                </div>
+                <div class="ft_txt">
+                    경상북도 울릉군 북면 추산길 88-13 TEL&nbsp;&nbsp;
+                    <a href="tel:054-791-7788">054-791-7788</a> &nbsp;&nbsp; FAX
+                    <a href="tel:054-791-7765">054-791-7765</a> &nbsp;&nbsp; E-mail
+                    <a href="mailto:welcome@thekosmos.co.kr">welcome@thekosmos.co.kr</a> &nbsp;&nbsp; | &nbsp;E-mail
+                    <div class="inline">
+                        <span></span>
+                    </div>
+                    KOSMOS 울릉 사업자등록번호 189-85-00052 &nbsp;&nbsp;대표 방민수 &nbsp;
+                    <a href="https://www.kolonglotech.co.kr/kor/etc/privacy.asp" class="pv_btn"
+                        rel="noopener noreferrer" target="_blank"><b>개인정보처리방침</b></a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="src/app.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

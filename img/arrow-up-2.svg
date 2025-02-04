@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84">
+    <defs>
+        <filter id="0jfvgz3a5a" x="0" y="0" width="84" height="84" filterUnits="userSpaceOnUse">
+            <feOffset dx="2" dy="2"/>
+            <feGaussianBlur stdDeviation="4" result="blur"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 170">
+        <g style="filter:url(#0jfvgz3a5a)">
+            <rect data-name="사각형 25" width="60" height="60" rx="30" transform="translate(10 10)" style="fill:#fff"/>
+        </g>
+        <path data-name="패스 438" d="M-308.242 8850.816v-28" transform="translate(348.242 -8796.816)" style="fill:none;stroke:#000;stroke-width:2px"/>
+        <path data-name="패스 439" d="m-316.047 8827.168 9-8 9 8" transform="translate(347.047 -8793.168)" style="fill:none;stroke:#000;stroke-width:2px"/>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="218" height="80" viewBox="0 0 218 80">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_710" data-name="사각형 710" width="218" height="80" transform="translate(-0.624 -17)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="향설운순" transform="translate(0.624 17)">
+    <g id="그룹_624" data-name="그룹 624" clip-path="url(#clip-path)">
+      <text id="香_雪_雲_筍" data-name="香 雪 雲 筍" transform="translate(0 39.243)" fill="#fff" font-size="45.632" font-family="YuGothicUI-Regular, Yu Gothic UI"><tspan x="0" y="0">香</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="0">雪</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="0">雲</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="0">筍</tspan></text>
+    </g>
+  </g>
+</svg>
